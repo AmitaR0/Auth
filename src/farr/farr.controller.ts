@@ -2,7 +2,6 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@n
 import { FarrService } from './farr.service';
 import { CreateFarrDto } from './dto/create-farr.dto';
 import { UpdateFarrDto } from './dto/update-farr.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
 import { ApiBearerAuth } from '@nestjs/swagger';
 import { Public, Roles } from 'src/auth/decorator';
 import { Role } from 'src/users/role.enum';
