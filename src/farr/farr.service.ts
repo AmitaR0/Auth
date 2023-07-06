@@ -21,7 +21,7 @@ export class FarrService {
   }
 
   findOne(id: number) {
-    return this.farrRepository.findOne({ where: { id: id }, relations: ["name"] });
+    return this.farrRepository.findOne({ where: { id: id }});
   }
 
   update(id: number, updateFarrDto: UpdateFarrDto) {
